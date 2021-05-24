@@ -1,5 +1,5 @@
 <?php
 
-include_once("5 Minesweeper.html");
+include_once("index.html");
 
 ?>
