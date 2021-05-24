@@ -1,0 +1,15 @@
+table {
+    width: 700px;
+    border: 4px solid; 
+}
+tr {
+    border: 4px solid;
+}
+td {
+    border: 4px solid;
+    height: 50px;
+}
+button {
+    height: 50px;
+    width: 50px;
+}
