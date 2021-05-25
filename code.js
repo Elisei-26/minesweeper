@@ -60,6 +60,7 @@ function whichButton(event, id) {
     } else { // if game is over but player still click on boxes
         document.getElementById("message").innerHTML = ('Click on restart!');
     }
+    return false;
 }
 
 var arrayLine;
@@ -147,4 +148,5 @@ function saveCoordinates(length, m, n) {
 
 function restart() {
     window.location.reload(true);
+    return false;
 }
