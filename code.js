@@ -142,4 +142,4 @@ function saveCoordinates(length, m, n) {
 
 function restart() {
     window.location.reload(true);
-}//144
+}
