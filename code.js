@@ -11,14 +11,14 @@ function generateGameBoard() {
                 table[i][j] = 1;
             }
             if (i != 0 && j != 0 && i != 15 && j != 15) {
-                $('#table').append('<td align="center" valign="middle"><button type="button" class="btn btn-outline-dark btn-primary" id="' + i + " " + j + '" onmousedown="whichButton(event, id);"><font size="5">⛝</font></button></td>');
+                $('#table').append('<td align="center" valign="middle"><button type="button" class="btn btn-outline-dark btn-primary" id="' + i + " " + j + '" onmousedown="whichButton(event, id);"></button></td>');
             }
         }
     }
     var nrBombs = 33, o, u;
     while (nrBombs > 0) { // choose the elements in the matrix that contain bombs
-        o = Math.floor(Math.random() * Math.floor(14));
-        u = Math.floor(Math.random() * Math.floor(14));
+        o = Math.floor(Math.random() * Math.floor(15));
+        u = Math.floor(Math.random() * Math.floor(15));
         if (table[o][u] == 0) {
             table[o][u] = 40;
             --nrBombs;
